@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html 
+{
+    font-size: 62.5%;
+
+    @include respond(tab-land)
+    {
+        font-size:56.25%;
+    }
+
+    @include respond(tab-por)
+    {
+        font-size: 53.75%;
+    }
+
+    @include respond(phone)
+    {
+        font-size: 45%;
+    }
+
+    @include respond (big-desktop)
+    {
+        font-size: 75%;
+
+    }
+}
+body
+{
+    box-sizing: border-box;
+    font-weight: 40rem;
+    font-family:  sans-serif;
+    color: $grey;
+    line-height: 1.7;
+    padding: 2rem;
+
+    @include respond(tab-por)
+    {
+        padding: 0;
+    }
+}

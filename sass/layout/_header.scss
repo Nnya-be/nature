@@ -1,0 +1,44 @@
+.header
+{
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($purpul-color,0.8) ,
+        rgba($aquamarine-color , 0.8)),
+          url(../pictures/icesea.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0 , 100% 0 , 100% 80vh , 0 100%);
+    @include respond(tab-por)
+    {
+        clip-path: polygon(0 0 , 100% 0 , 100% 85vh , 0 100%);
+
+    }
+
+    @include respond(phone)
+    {
+        clip-path: polygon(0 0 , 100% 0 , 100% 86vh , 0 100%);
+    }
+    position: relative;
+    &__logo-box
+    {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+    &--logo
+    {
+        height: 7rem;
+        width: 8rem;
+        
+    }
+    &__text-box
+    {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}

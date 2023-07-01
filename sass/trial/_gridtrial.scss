@@ -1,0 +1,53 @@
+//vars
+/*
+$width : 110rem;
+$row-spacing : 5rem;
+$column-spacing : 6rem;
+
+$back-color : rgb(102, 76, 76);
+
+@mixin clearfix  {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+.row{
+    max-width: $width;
+    background-color: $back-color;
+
+    margin: 0 auto;
+    &:not(:last-child)
+    {
+        margin-bottom: $row-spacing;
+    }
+
+    @include clearfix;
+
+    [class ^="col-"]{
+        background-color: black;
+        float: left;
+        &:not(:last-child){
+            margin-right: $row-spacing;
+        }
+    }
+    .col-1-of-2{
+        width: calc( ( 100% - #{$row-spacing}) / 2);
+    }
+
+    .col-1-of-4{
+        width: calc((100% - 3 * #{$row-spacing}) / 4);
+        background-color: black;
+    }
+
+    .col-2-of-4{
+        width: calc( ( 2 * (100% - 3 *  #{$row-spacing}) / 4) + #{$row-spacing}) ;
+    }
+
+    .col-3-of-4{
+        width: calc( ( 3 * (100% - 3 *  #{$row-spacing}) / 4) + 2*#{$row-spacing}) ;
+    }
+}*/
